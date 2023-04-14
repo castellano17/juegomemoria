@@ -22,8 +22,16 @@ const ListIcons = () => {
 
     const validateCards = (newIndexCard) =>{
         setTimeout(()=>{
-            cardList[prevIndexCard].status = 'down'
-            cardList[newIndexCard].status = 'down'
+            const prev = cardList[prevIndexCard]
+            const current = cardList[newIndexCard]
+            if(prev.icon === current.icon){
+               prev.status = 'up'
+                current.status='up'
+            }else{
+                prev.status = 'down'
+                current.status = 'down'
+            }
+           
             setCardList([...cardList])
             setPrevIndexCard(-1)
         },1000)
