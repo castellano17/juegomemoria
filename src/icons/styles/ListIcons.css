@@ -1,10 +1,14 @@
 .card{
     text-align: center;
+    background-color: var(--background);
+    
 }
 
 .card h2{
     margin-bottom: 20px;
     margin-top: 10px;
+    background-color: var(--verde-claro);
+    padding: 10px;
 }
 
 .cards__container{
@@ -16,6 +20,7 @@
     gap: 10px;
     margin: 0 auto;
     max-width: 600px;
+    padding: 20px;
 }
 
 .cards_container-card{

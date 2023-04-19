@@ -20,6 +20,8 @@ const ListIcons = () => {
       
     }
 
+    
+
     const validateCards = (newIndexCard) =>{
         setTimeout(()=>{
             const prev = cardList[prevIndexCard]
@@ -43,7 +45,7 @@ const ListIcons = () => {
   return (
     
     <div className='card'>
-            <h2>Memory</h2>
+            <h2>Memory game</h2>
            <div className="cards__container">
            { 
             cardList.map((card, i) => (
